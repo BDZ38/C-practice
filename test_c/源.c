@@ -1,11 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-main () 
+
+
+
+#include <stdio.h>
+
+
+int main()
 {
-  int a = 10;
-  
-  return 0;
+	char s[] = "wasdp";
+	printf("%s\n", s);
+
+	return 0;
 }
-
-
-
