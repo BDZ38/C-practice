@@ -4,25 +4,14 @@
 int main()
 {
 	
-	printf ("     **\n     **\n");
+	printf("name\tage\tgender\n");
 
 	int i = 0;
-		while (i <= 12)
+		while (i <= 21)
 		{
-			printf("*");
+			printf("-");
 			i++;
 		}
-	
-		printf("\n");
-		
-		int a = 0;
-		while (a <= 12)
-		{
-			printf("*");
-			a++;
-		}
-
-		printf("\n");
-
+		printf("\nJack\t18 \tMan");
 	return 0;
 }
