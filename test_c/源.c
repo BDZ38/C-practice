@@ -13,5 +13,14 @@ int main()
 			i++;
 		}
 		printf("\nJack\t18 \tMan");
-	return 0;
+	
+		
+		
+		
+		char s[] = "oof";
+		printf("\n%s",s);
+		
+		
+		
+		return 0;
 }
