@@ -5,11 +5,19 @@
 
 #include <stdio.h>
 
+int Add(int a, int b)
+{
+	return a+b;
+}
+
 
 int main()
 {
-	char s[] = "wasdp";
+
 	printf("%s\n", s);
+
+
+
 
 	return 0;
 }
