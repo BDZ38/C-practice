@@ -1,23 +1,28 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-
-
-
-
+#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
-
-int Add(int a, int b)
-{
-	return a+b;
-}
-
 
 int main()
 {
+	
+	printf ("     **\n     **\n");
 
-	printf("%s\n", s);
+	int i = 0;
+		while (i <= 12)
+		{
+			printf("*");
+			i++;
+		}
+	
+		printf("\n");
+		
+		int a = 0;
+		while (a <= 12)
+		{
+			printf("*");
+			a++;
+		}
 
-
-
+		printf("\n");
 
 	return 0;
 }
