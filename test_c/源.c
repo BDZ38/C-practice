@@ -1,11 +1,20 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 
+
+
+int Add(int x int y)
+{
+
+
+	return x + y;
+}
+
 int main()
 {
 	int a = 40;
 	int c = 212;
-	int b = (-8+22)*a-10+c/2;
+	int b = a+c;
 	printf("%d\n",b);
 		
 		
