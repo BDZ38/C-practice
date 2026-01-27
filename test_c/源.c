@@ -7,7 +7,7 @@
 int main()
 {
 
-	printf("%s\n","c:\test\121");
+	printf("%d\n","c:\test\121");
 		
 		
 		
