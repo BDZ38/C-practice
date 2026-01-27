@@ -7,7 +7,7 @@
 int main()
 {
 
-	printf("%d\n",strlen("c:\test\121"));
+	printf("%s\n","c:\test\121");
 		
 		
 		
