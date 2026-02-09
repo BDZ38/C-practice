@@ -2,20 +2,18 @@
 #include <stdio.h>
 #include <string.h>
 
-int compare(int x, int y) {
-	if (x > y) 
-		return x;
-	else 
-		return y;
-}
-
 int main(){
-	int x, y;
-	scanf("%d%d", &x, &y);
-	
-	printf("%d\n", compare(x, y));
+	int x,y;
+		scanf("%d", &x);
+		if (x<0)
+			y = -1;
+		else if (x>0)
+			y = 1;
+		else
+			y = 0;
+		printf("%d\n", y);
 		return 0;
-}
+	}
 
 
 
