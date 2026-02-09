@@ -2,13 +2,20 @@
 #include <stdio.h>
 #include <string.h>
 
+int compare(int x, int y) {
+	if (x > y) {
+		return x;
+	}
+	else {
+		return y;
+	}
+}
 
-
-int main()
-{
-	char arr[4] = { 'b','i','t'};
-	printf("%d\n", strlen(arr));
-		
+int main(){
+	int x, y;
+	scanf("%d%d", &x, &y);
+	
+	printf("%d\n", compare(x, y));
 		return 0;
 }
 
