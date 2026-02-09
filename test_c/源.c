@@ -6,10 +6,8 @@
 
 int main()
 {
-
-	printf("%d\n","c:\test\121");
-		
-		
+	char arr[] = { 'b','i','t','\0'};
+	printf("%d\n", strlen(arr));
 		
 		return 0;
 }
