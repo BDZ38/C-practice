@@ -1,25 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <string.h>
-int sgn(int x) {
-		if (x > 0)
-			x = 1;
-		else if (x < 0) 
-			x = -1;
-		else
-			x = 0;
-	return x;
-}
+
+
 int main() {
-	int x;
-	scanf("%d", &x);
-	if (x > 10000 || x < -10000) {
-		printf("out of range");
-	}
-	else {
-		printf("%d\n", sgn(x));
+	/*float a = 7 / 2.0;
+	printf("%f\n", a);*/
+
+
+
 		return 0;
 	}
-}
+
 
 
