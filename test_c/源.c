@@ -10,12 +10,16 @@ int sgn(int x) {
 			x = 0;
 	return x;
 }
-int main(){
+int main() {
 	int x;
-		scanf("%d", &x);
-		printf("%d\n",sgn(x));
+	scanf("%d", &x);
+	if (x > 10000 || x < -10000) {
+		printf("out of range");
+	}
+	else {
+		printf("%d\n", sgn(x));
 		return 0;
 	}
-
+}
 
 
