@@ -2,14 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 int sgn(int x) {
-	int z;
 		if (x > 0)
-			z = 1;
+			x = 1;
 		else if (x < 0) 
-			z = -1;
+			x = -1;
 		else
-			z = 0;
-	return z;
+			x = 0;
+	return x;
 }
 int main(){
 	int x;
