@@ -2,13 +2,23 @@
 #include <stdio.h>
 #include <string.h>
 
-
 int main() {
-	/*float a = 7 / 2.0;
-	printf("%f\n", a);*/
-	int a = 10;
-	printf("%d\n", sizeof a);
-	printf("%d\n", sizeof(int));
+	int n;
+	scanf("%d",&n);
+	int a = 1;
+	int ret = 1;
+	int sum = 0;
+	for (a=1;a<=n;a++)
+	{
+		ret *= a;
+		sum += ret;
+	}
+	printf("%d", sum);
+
+
+
+
+
 
 		return 0;
 	}
