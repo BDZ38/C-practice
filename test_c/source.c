@@ -4,22 +4,27 @@
 #include <string.h>
 #include <windows.h>
 int main() {
-	char arr[] =  "Welcome to bit !!!" ;
-	char arr2[] = "##################";
-	int left = 0;
-	int right = strlen(arr)-1;
 	
-	for (left = 0; left <= 9; left++)
+	int login_times = 0;
+	for (login_times = 0;login_times<3;login_times++)
 	{
-		arr2[left] = arr[left];
-		arr2[strlen(arr) - left] = arr[strlen(arr) - left];
-		printf("%s\n", arr2);
-		Sleep(500);
-		system("cls");
+		char input[20];
+		scanf("%s", input);
+
+		if (strcmp(input,"123")==0)
+		{
+			printf("Success!\n");
+			break;
+		}
+		else
+		{
+			printf("Password incorrect,please retry.\n");
+		}
 	}
-
-
-
+	if (login_times == 3)
+	{
+		printf("account frozen\n");
+	}
 
 
 		return 0;
