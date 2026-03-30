@@ -3,33 +3,22 @@
 #include <string.h>
 
 int main() {
-	int arr[] = {1,2,3,4,5,6,7,8,9,10};
-	int k;
-	scanf("%d", &k);
-	int sz = sizeof(arr) / sizeof(arr[0]);
+	char arr[] =  "Welcome to bit !!!" ;
+	char arr2[] = "##################";
 	int left = 0;
-	int right = sz - 1;
-	while (left <= right)
+	int right = strlen(arr)-1;
+	
+	for (left = 0; left <= 9; left++)
 	{
-		int mid = left + (right - left) / 2;
-		if (arr[mid] < k)
-		{
-			left = mid + 1;
-		}
-		else if (arr[mid] > K)
-		{
-			right = mid - 1;
-		}
-		else
-		{
-			printf("%d\n", mid);
-			break;
-		}
+		arr2[left] = arr[left];
+		arr2[strlen(arr) - left] = arr[strlen(arr) - left];
+		printf("%s\n", arr2);
 	}
-	if (left > right)
-	{
-		printf("cannot found");
-	}
+
+
+
+
+
 		return 0;
 	}
 
