@@ -1,0 +1,30 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Build outputs
+x64/
+Win32/
+Debug/
+Release/
+*.exe
+*.ilk
+*.pdb
+*.obj
+*.obj.enc
+*.log
+*.recipe
+*.idb
+*.tlog/
+*.ipch/
+*.lastbuildstate
+
+# VS Code
+.vscode/
+
+# Windows
+[Bb]in/
+[Dd]esktop.ini
+Thumbs.db
