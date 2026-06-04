@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /* ── Pomodoro durations (in minutes) ── */
-#define WORK_MINUTES       5  /* TODO: change to 25 */
-#define BREAK_MINUTES      1  /* TODO: change to  5 */
-#define LONG_BREAK_MINUTES 15
+#define WORK_MINUTES       25
+#define BREAK_MINUTES      5
+#define LONG_BREAK_MINUTES 20
 #define SESSIONS_BEFORE_LONG 4
 
 /* ── Timer IDs ── */
@@ -438,6 +438,7 @@ void OnTick(void)
 
         SetTo(WORK_MINUTES);
         g_st = ST_IDLE;
+        SetWindowText(g_hwnd, L"Pomodoro");
     }
 
     InvalidateRect(g_hwnd, NULL, TRUE);
@@ -468,7 +469,7 @@ void ShowOverlay(const wchar_t* subtitle)
     g_overShown = TRUE;
 
     /* Auto-dismiss after 10 seconds */
-    SetTimer(g_hwnd, ID_OVERLAY_AUTO, 10000, NULL);
+    SetTimer(g_hwnd, ID_OVERLAY_AUTO, 15000, NULL);
 }
 
 void HideOverlay(void)
