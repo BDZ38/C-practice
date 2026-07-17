@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pomodoro.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="practice\source.c">
       <Filter>源文件</Filter>
     </ClCompile>

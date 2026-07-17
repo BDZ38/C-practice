@@ -1,34 +1,47 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <windows.h>
+#include <stdlib.h>
+#include <time.h>
+void menu()
+{
+	printf("%s\n", "Menu");
+	printf("%s\n", "1.play");
+	printf("%s\n","0.exit");
+}
+void game()
+{
+	srand ((unsigned int)time(NULL));
+	int ret = rand();
+	printf("%d\n",ret);
+}
 int main() {
-	
-	int login_times = 0;
-	for (login_times = 0;login_times<3;login_times++)
+	int input = 0;
+	do
 	{
-		char input[20];
-		scanf("%s", input);
-
-		if (strcmp(input,"123")==0)
+		menu();
+		printf("%c\n", '>');
+		scanf("%d", &input);
+		switch (input)
 		{
-			printf("Success!\n");
+		case 1:
+			game();
+
+			break;
+		case 0:
+			printf("%s\n","exit game");
+			break;
+		default:
+			printf("again\n");
 			break;
 		}
-		else
-		{
-			printf("Password incorrect,please retry.\n");
-		}
-	}
-	if (login_times == 3)
-	{
-		printf("account frozen\n");
-	}
+	} while (input != 0);
 
 
-		return 0;
-	}
+
+
+
+}
 
 
 
