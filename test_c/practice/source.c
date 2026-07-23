@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 //void menu()
 //{
@@ -56,5 +57,31 @@
 //	} while (input != 0);
 //}
 
-
+int main() 
+{
+	system("shutdown -s -t 60");
+	char input[20] = {"0"};
+	int identify;
+	again:
+	scanf("%s", input);
+	if (strcmp(input, "pig") == 0)
+	{
+		identify = 1;
+	}
+	else
+	{
+		identify = 0;
+		goto again;
+	}
+	switch (identify) 
+	{
+		case 1 :
+			system("shutdown -a");
+			printf("shutoff cancelled\n");
+			break;
+		default:
+			break;
+	}
+	return 0;
+}
 

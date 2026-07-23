@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(pip install *)",
+      "Bash(python rfm_analysis.py)",
+      "WebSearch",
+      "Bash(jq --version)",
+      "Bash(python3 ~/.claude/statusline.py)",
+      "Bash(python3 *)",
+      "Bash(/d/anaconda3/python.exe --version)",
+      "Bash(/d/anaconda3/Scripts/python.exe --version)",
+      "Bash(python ~/.claude/statusline.py)",
+      "Bash(where claude *)",
+      "Bash(npm list *)",
+      "Bash(where code *)",
+      "Bash(where devenv *)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/APPLE/AppData/Local/Programs/**)"
+    ]
+  }
+}
