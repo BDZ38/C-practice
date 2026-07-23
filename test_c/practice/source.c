@@ -1,68 +1,16 @@
-#define _CRT_SECURE_NO_WARNINGS 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-//void menu()
-//{
-//	printf("%s\n", "Menu");
-//	printf("%s\n", "1.play");
-//	printf("%s\n","0.exit");
-//}
-//void game()
-//{
-//	int guess = 0;
-//	int ret = rand()%100+1;
-//while(1)
-//	{
-//	printf("%d\n", ret);
-//	printf("guess num>");
-//	scanf("%d", &guess);
-//		if (ret > guess)
-//			{
-//				printf("too small\n");
-//			}
-//		else if (ret < guess)
-//			{
-//				printf("too big\n");
-//			}
-//		else
-//			{
-//				printf("correct\n");
-//				break;
-//			}
-//	}
-//}
-//int main() {
-//	int input = 0;
-//	srand((unsigned int)time(NULL));
-//	do
-//	{
-//		menu();
-//		printf("%c\n", '>');
-//		scanf("%d", &input);
-//		switch (input)
-//		{
-//		case 1:
-//			game();
-//
-//			break;
-//		case 0:
-//			printf("%s\n","exit game");
-//			break;
-//		default:
-//			printf("again\n");
-//			break;
-//		}
-//	} while (input != 0);
-//}
 
-int main() 
+int main()
 {
+	printf("电脑即将关机，输入pig以取消.\n");
 	system("shutdown -s -t 60");
-	char input[20] = {"0"};
+	char input[20] = { 0 };
 	int identify;
-	again:
+again:
 	scanf("%s", input);
 	if (strcmp(input, "pig") == 0)
 	{
@@ -71,17 +19,17 @@ int main()
 	else
 	{
 		identify = 0;
+		printf("再试试.\n");
 		goto again;
 	}
-	switch (identify) 
+	switch (identify)
 	{
-		case 1 :
+		case 1:
 			system("shutdown -a");
-			printf("shutoff cancelled\n");
+			printf("关机取消.\n");
 			break;
 		default:
 			break;
 	}
 	return 0;
 }
-
