@@ -9,27 +9,13 @@ int main()
 	printf("电脑即将关机，输入pig以取消.\n");
 	system("shutdown -s -t 60");
 	char input[20] = { 0 };
-	int identify;
-again:
-	scanf("%s", input);
-	if (strcmp(input, "pig") == 0)
+	do
 	{
-		identify = 1;
-	}
-	else
-	{
-		identify = 0;
+		scanf("%s", input);
 		printf("再试试.\n");
-		goto again;
 	}
-	switch (identify)
-	{
-		case 1:
-			system("shutdown -a");
-			printf("关机取消.\n");
-			break;
-		default:
-			break;
-	}
+	while(strcmp(input, "pig") != 0);
+	system("shutdown -a");
+	printf("关机取消.\n");
 	return 0;
 }
