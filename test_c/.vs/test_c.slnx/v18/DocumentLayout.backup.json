@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "source.c",
               "DocumentMoniker": "D:\\code.test\\C-practice\\test_c\\practice\\source.c",
               "RelativeDocumentMoniker": "practice\\source.c",
-              "ToolTip": "D:\\code.test\\C-practice\\test_c\\practice\\source.c",
-              "RelativeToolTip": "practice\\source.c",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
+              "ToolTip": "D:\\code.test\\C-practice\\test_c\\practice\\source.c*",
+              "RelativeToolTip": "practice\\source.c*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-07-17T09:28:49.755Z",
               "EditorCaption": ""
