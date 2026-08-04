@@ -3,21 +3,22 @@
 
 #include <string.h>
 
-int findmax(int x, int y)
+void switch_int(int *x,int *y)
 {
-	if (x > y)
-		return x;
-	else if (x < y)
-		return y;
-	else
-		return x;
+	int z = *x;
+	*x = *y;
+	*y = z;
 }
+
 int main()
 {
-	int x;
-	int y;
-	scanf("%d %d", & x,& y);
-	int z = findmax(x, y);
-	printf("%d\n", z);
+	int a;
+	int b;
+	scanf("%d %d", &a, &b);
+	int* m = &a;
+	int* n = &b;
+	switch_int(m, n);
+	printf("%d\n", a);
+	printf("%d\n", b);
 	return 0;
 }
