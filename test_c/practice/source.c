@@ -3,7 +3,7 @@
 
 #include <string.h>
 
-void switch_int(int *x,int *y)
+void switch_int(int* x,int* y)
 {
 	int z = *x;
 	*x = *y;
@@ -15,9 +15,8 @@ int main()
 	int a;
 	int b;
 	scanf("%d %d", &a, &b);
-	int* m = &a;
-	int* n = &b;
-	switch_int(m, n);
+
+	switch_int(&a,&b);
 	printf("%d\n", a);
 	printf("%d\n", b);
 	return 0;
