@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <math.h>
 //判断素数
 
 int main()
@@ -10,7 +12,7 @@ int main()
 	{
 		int flag =1;
 		int j;
-		for (j = 2; j <= i - 1; j++)
+		for (j = 2; j <= sqrt(i); j++)
 		{
 			if (0 == i%j)
 			{
