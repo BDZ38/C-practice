@@ -1,23 +1,28 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
 #include <string.h>
-
-void switch_int(int* x,int* y)
-{
-	int z = *x;
-	*x = *y;
-	*y = z;
-}
+//判断素数
 
 int main()
 {
-	int a;
-	int b;
-	scanf("%d %d", &a, &b);
-
-	switch_int(&a,&b);
-	printf("%d\n", a);
-	printf("%d\n", b);
+	int i;
+	for (i = 1; i <= 200; i++)
+	{
+		int flag =1;
+		int j;
+		for (j = 2; j <= i - 1; j++)
+		{
+			if (0 == i%j)
+			{
+				flag = 0;
+				break;
+			}
+			
+		}
+		if (flag == 1)
+		{
+			printf("%d\n", i);
+		}
+	}
 	return 0;
 }
