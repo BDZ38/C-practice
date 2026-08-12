@@ -4,27 +4,26 @@
 #include <stdlib.h>
 #include <math.h>
 //判断素数
+int is_prime (int x)
+{
+	int j;
+	for (j = 2; j <= sqrt(x); j++)
+	{
+		if (0 == x % j)
+		{
+			return 0;
+		}
+	}
+		return 1;
+}
 
 int main()
 {
 	int i;
-	for (i = 1; i <= 200; i++)
+	for (i = 101; i <= 200; i+=2)
 	{
-		int flag =1;
-		int j;
-		for (j = 2; j <= sqrt(i); j++)
-		{
-			if (0 == i%j)
-			{
-				flag = 0;
-				break;
-			}
-			
-		}
-		if (flag == 1)
-		{
-			printf("%d\n", i);
-		}
+		if (is_prime(i))
+		printf("%d\n",i);
 	}
 	return 0;
 }
