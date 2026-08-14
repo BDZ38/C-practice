@@ -3,27 +3,37 @@
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
-//判断素数
-int is_prime (int x)
+int binary_search(int arr[], int sz, int k)
 {
-	int j;
-	for (j = 2; j <= sqrt(x); j++)
+	int left = 0;
+	int right = sz - 1;
+	while (1)
 	{
-		if (0 == x % j)
-		{
-			return 0;
-		}
+		int mid = left + (right - left) / 2;
+		if (arr[mid] < k)
+			left = mid + 1;
+		else if (arr[mid] > k)
+			right = mid - 1;
+		else
+			return mid;
 	}
-		return 1;
+	return -1;
 }
 
 int main()
 {
-	int i;
-	for (i = 101; i <= 200; i+=2)
+	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int k = 7;
+	int sz = sizeof(arr) / sizeof(arr[0]);
+
+	int ret = binary_search(arr,sz,k);
+	if (ret == -1)
 	{
-		if (is_prime(i))
-		printf("%d\n",i);
+		printf("cannot find\n");
+	}
+	else
+	{
+		printf("%d\n", arr[ret]);
 	}
 	return 0;
 }
