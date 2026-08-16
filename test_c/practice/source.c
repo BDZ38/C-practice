@@ -3,16 +3,25 @@
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
-void add(int * num)
+#include "add.h"
+int stringlength(char* str)
 {
-	*num = *num+1;
+	int count = 0;
+	while (*str != '\0')
+	{
+		count++;
+		str++;
+	}
+
+	return count;
 }
 
 int main()
 {
-	int num = 0;
-	printf("%d\n", num);
-	add(&num);
-	printf("%d\n", num);
+	char arr[] = "abc";
+	printf ("%d\n",stringlength(arr));
 	return 0;
 }
+
+
+

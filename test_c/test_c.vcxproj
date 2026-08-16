@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="practice\add.c" />
     <ClCompile Include="practice\source.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="practice\add.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

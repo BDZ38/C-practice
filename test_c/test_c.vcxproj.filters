@@ -18,5 +18,13 @@
     <ClCompile Include="practice\source.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="practice\add.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="practice\add.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
