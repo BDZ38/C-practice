@@ -1,22 +1,22 @@
 #include"game.h"
 void game()
 {
-	char mine[ROWS][COLS] = { "0" };//åˆå§‹åŒ–åœ°é›·ç›˜
-	char show[ROW][COL] = { "0" };//åˆå§‹åŒ–æ£‹ç›˜
-	init_mine(mine,ROWS,COLS);//æ”¾ç½®åœ°é›·
+	char mine[ROWS][COLS] = { "0" };//³õÊ¼»¯µØÀ×ÅÌ
+	char show[ROW][COL] = { "0" };//³õÊ¼»¯ÆåÅÌ
+	init_mine(mine,ROWS,COLS);//·ÅÖÃµØÀ×
 
 }
 
 
 int main()
 {
+	srand((unsigned int)time(NULL));
 	int input;
-	printf("1.play");//èœå•
+	printf("1.play\n");//²Ëµ¥
 	scanf("%d", &input);
-	char start[] = "1";
-	if (strcmp(input,start) == 0)
+	if (input == 1)
 	{
-		game();//å¯åŠ¨æ¸¸æˆ
+		game();//Æô¶¯ÓÎÏ·
 	}
 	return 0;
 }
